@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, inicial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Survey Form</title>
         <link rel="stylesheet" href="style.css">
     </head>
@@ -18,13 +18,15 @@
                 <input 
                 id="name" 
                 type="text" 
-                placeholder="Enter your name">   
+                placeholder="Enter your name"
+                required>   
             </div>
             <div>
                 <label id="email-label">Email</label>
                     <input 
                     id="email" 
-                    placeholder="Enter your Email">
+                    placeholder="Enter your Email"
+                    required>
                 </div>
                 <div>
                 <label id="number-label">Age (optional)</label>
@@ -46,8 +48,8 @@
                     </select>
                 </div>
             <div>
-                <p>Would you recommend freeCodeCamp to a friend?</p>
-                <label><input
+                <p class="modifier">Would you recommend freeCodeCamp to a friend?</p>
+                <label class="block-mod"><input
                     class="inline" 
                     name="recommend" 
                     type="radio">
@@ -73,8 +75,8 @@
                 </select>
             </div>
             <div>
-                <p>What would you like to see improved? (Check all that apply)</p>
-                <label>
+                <p class="modifier">What would you like to see improved? (Check all that apply)</p>
+                <label class="block-mod">
                     <input
                     class="inline"
                     value="Front-end Projects"
@@ -106,8 +108,11 @@
                     >Open Source Community</label>
             </div>
             <div>
-                <p>Any comments or suggestions?</p>
+                <p class="modifier"class="modifier">Any comments or suggestions?</p>
                 <textarea
+                class="block-mod"
+                cols="30"
+                rows="3"
                 id="comments"
                 placeholder="Enter your comments here..."
                 ></textarea>
